@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Yoginini">
+  <title>Yoginini</title>
+  <desc>The crown lotus, Sahasrara. Five petals opening from a single base over a still line.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="46%" r="52%">
+      <stop offset="0%"   stop-color="#B39DDB" stop-opacity=".34"/>
+      <stop offset="55%"  stop-color="#8A72C4" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#B39DDB" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="core" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%"  stop-color="#EFE9F8"/>
+      <stop offset="100%" stop-color="#CDBEEA"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="#100D17"/>
+  <circle cx="256" cy="236" r="210" fill="url(#glow)"/>
+
+  <!-- Petals open from one base point at (256, 372). -->
+  <g transform="translate(256 256) scale(.86) translate(-256 -262)">
+  <g>
+    <path fill="#5E4B9A" transform="rotate(-56 256 372)" d="M256 372C216 322 202 246 226 178 262 226 272 306 256 372Z"/>
+    <path fill="#5E4B9A" transform="rotate(56 256 372)"  d="M256 372C296 322 310 246 286 178 250 226 240 306 256 372Z"/>
+    <path fill="#8A72C4" transform="rotate(-28 256 372)" d="M256 372C220 314 210 226 234 152 268 208 274 302 256 372Z"/>
+    <path fill="#8A72C4" transform="rotate(28 256 372)"  d="M256 372C292 314 302 226 278 152 244 208 238 302 256 372Z"/>
+    <path fill="url(#core)" d="M256 372C224 310 224 208 256 122 288 208 288 310 256 372Z"/>
+  </g>
+
+  <!-- The still line the practice returns to. -->
+  <path fill="none" stroke="#D6CBEF" stroke-opacity=".62" stroke-width="11" stroke-linecap="round"
+        d="M170 382A86 40 0 0 0 342 382"/>
+  </g>
+</svg>

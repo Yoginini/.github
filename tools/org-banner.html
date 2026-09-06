@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Yoginini org banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500&family=Figtree:wght@300;400;500&family=Space+Mono&display=swap">
+<style>
+  html, body { margin: 0; padding: 0; width: 1280px; height: 440px; overflow: hidden; }
+  body {
+    background: #100d17; color: #ece7f3; font-family: Figtree, system-ui, sans-serif;
+    position: relative; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    box-sizing: border-box; padding: 0 80px;
+  }
+  .glow {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(38% 90% at 50% 118%, rgba(179,157,219,.34), transparent 66%),
+      radial-gradient(30% 46% at 92% 4%,  rgba(179,157,219,.16), transparent 70%),
+      radial-gradient(26% 40% at 6% 96%,  rgba(224,168,107,.10), transparent 70%);
+  }
+  .mark { position: relative; width: 92px; height: 92px; margin-bottom: 22px; }
+  .word {
+    position: relative; font-family: 'Cormorant Garamond', serif; font-weight: 500;
+    font-size: 82px; letter-spacing: .02em; line-height: 1; margin: 0;
+  }
+  .word em { font-style: italic; font-weight: 300; color: #d6cbef; }
+  .tag {
+    position: relative; font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-weight: 300; font-size: 34px; color: #cac4d2; margin: 18px 0 0;
+  }
+  .meta {
+    position: relative; font-family: 'Space Mono', monospace; font-size: 13px;
+    letter-spacing: .22em; text-transform: uppercase; color: #7f788b; margin: 30px 0 0;
+  }
+  .meta b { color: #b39ddb; font-weight: 400; }
+  .rule { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: linear-gradient(90deg, #5e4b9a, #b39ddb 46%, #e0a86b); }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+
+  <svg class="mark" viewBox="0 0 512 512" aria-hidden="true">
+    <defs>
+      <linearGradient id="core" x1="30%" y1="0%" x2="70%" y2="100%">
+        <stop offset="0%" stop-color="#EFE9F8"/><stop offset="100%" stop-color="#CDBEEA"/>
+      </linearGradient>
+    </defs>
+    <path fill="#5E4B9A" transform="rotate(-56 256 372)" d="M256 372C216 322 202 246 226 178 262 226 272 306 256 372Z"/>
+    <path fill="#5E4B9A" transform="rotate(56 256 372)"  d="M256 372C296 322 310 246 286 178 250 226 240 306 256 372Z"/>
+    <path fill="#8A72C4" transform="rotate(-28 256 372)" d="M256 372C220 314 210 226 234 152 268 208 274 302 256 372Z"/>
+    <path fill="#8A72C4" transform="rotate(28 256 372)"  d="M256 372C292 314 302 226 278 152 244 208 238 302 256 372Z"/>
+    <path fill="url(#core)" d="M256 372C224 310 224 208 256 122 288 208 288 310 256 372Z"/>
+    <path fill="none" stroke="#D6CBEF" stroke-opacity=".62" stroke-width="11" stroke-linecap="round" d="M170 382A86 40 0 0 0 342 382"/>
+  </svg>
+
+  <p class="word">yogin<em>ini</em></p>
+  <p class="tag">A yoga teacher who can see you.</p>
+  <p class="meta">yoginini.us &nbsp;&middot;&nbsp; <b>FZ-003</b> &nbsp;&middot;&nbsp; a Factory Zero venture</p>
+
+  <div class="rule"></div>
+</body>
+</html>
