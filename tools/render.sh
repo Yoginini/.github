@@ -11,10 +11,6 @@ CHROME="${CHROME:-/Applications/Google Chrome.app/Contents/MacOS/Google Chrome}"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
-# Download fonts before rendering
-echo "Ensuring fonts are available..."
-"$ROOT/tools/download-fonts.sh"
-
 shoot() { # src w h out [scale]
   "$CHROME" --headless --disable-gpu --no-sandbox --hide-scrollbars \
     --force-device-scale-factor="${5:-1}" --window-size="$2,$3" \
