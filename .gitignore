@@ -1,2 +1,5 @@
 .DS_Store
 *.log
+# Font files are downloaded at build time to avoid binary bloat and false positives
+# from secret scanners. License files are checked in instead.
+assets/fonts/*.woff2
